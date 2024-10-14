@@ -90,8 +90,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
       y: 21
       width: 780.6
       height: 313.59998
-    m_Scale: {x: 1.25, y: 1.25}
+    m_Scale: {x: 0.36296293, y: 0.36296293}
     m_Translation: {x: 390.3, y: 156.79999}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -112,10 +112,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -312.24
-      y: -125.43999
-      width: 624.48
-      height: 250.87997
+      x: -1075.3164
+      y: -432
+      width: 2150.6328
+      height: 864
     m_MinimalGUI: 1
   m_defaultScale: 0.36296293
   m_LastWindowPixelSize: {x: 975.75, y: 418.24997}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 2086
+  controlID: 9848
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -266,7 +266,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -292,7 +292,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -573,6 +573,19 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: UnityEditor.SceneViewCameraOverlay
+      index: 12
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
@@ -584,9 +597,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 960, y: 362.40588, z: 0}
     speed: 2
-    m_Value: {x: 0.000000035994162, y: 0, z: 0}
+    m_Value: {x: 960, y: 362.40588, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -636,9 +649,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.14173122
+    m_Target: 186.71776
     speed: 2
-    m_Value: 0.14173126
+    m_Value: 186.71776
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -726,23 +739,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2a55ffff
-      m_LastClickedID: -43734
-      m_ExpandedIDs: f4b1ffff
+      m_SelectedIDs: 1e7a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: fc74ffff6676ffffde77ffff8486ffff9086ffffbe88ffffa0a0ffffaca0ffffeca2ffff6cb2ffff8abcffff04fbffff307700004c770000128400002c840000268700004e8700006c870000028800003288000050880000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Snake
-        m_OriginalName: Snake
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -43734
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -910,24 +923,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\Github\Snake2D\Snake2D
+  m_LastProjectPath: E:\Github\Snake2D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c6890000
     m_LastClickedID: 35270
-    m_ExpandedIDs: 000000000288000000ca9a3bffffff7f
+    m_ExpandedIDs: ffffffff000000008a7900008c7900008e79000090790000927900009479000096790000987900009a7900009c7900009e790000a0790000a2790000a4790000a6790000a8790000aa790000ac790000ae790000b0790000b2790000b4790000347f0000387f0000407f0000447f00004c7f0000587f00005c7f0000607f0000508000005c860000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -952,10 +964,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a55ffff
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b66c000002880000428800004688000030890000c689000000ca9a3b
+    scrollPos: {x: 0, y: 111.00006}
+    m_SelectedIDs: 1e7a0000
+    m_LastClickedID: 31262
+    m_ExpandedIDs: ffffffff000000008a7900008c7900008e79000090790000927900009479000096790000987900009a7900009c7900009e790000a0790000a2790000a4790000a6790000a8790000aa790000ac790000ae790000b0790000b2790000b4790000347f0000387f0000407f0000447f00004c7f0000587f00005c7f0000607f0000508000005c860000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,8 +992,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2a55ffff
-    m_LastClickedInstanceID: -43734
+    m_SelectedInstanceIDs: 1e7a0000
+    m_LastClickedInstanceID: 31262
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1078,7 +1090,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 188.64996
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

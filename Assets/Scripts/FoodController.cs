@@ -5,52 +5,71 @@ using UnityEngine;
 
 public class FoodController : MonoBehaviour
 {
-    [SerializeField] private SnakeController controller;
-    [SerializeField] private List<Transform> food;
+    //[SerializeField] private SnakeController controller;
+    [SerializeField] private List<Transform> foodList;
     [SerializeField] private Transform massBuner;
+    [SerializeField] private ScoreController scoreController;
 
-    float timer = 0;
-    float spwanintervalTimer = 5f;
+    float foodTimer = 0;
+    float foodSpawnInterval = 5f;
 
-    private void Start()
-    {
-    }
+    float massBurnerTimer = 0f;
+    float massBurnerSpawnInterval = 10f;
+
+
+
 
     private void Update()
     {
-        timer += Time.deltaTime;
-        if(timer >= spwanintervalTimer)
+        foodTimer += Time.deltaTime;
+        massBurnerTimer += Time.deltaTime;
+
+        if (foodTimer >= foodSpawnInterval)
         {
             RandomFood();
-          
-            timer = 0;
+
+            foodTimer = 0f;
         }
+        if (massBurnerTimer >= massBurnerSpawnInterval &&  (scoreController.GetPlayerOneScore() > 5 || scoreController.GetPlayerTwoScore() > 5))
+        { 
+            SpawnMassBuner();
+            massBurnerTimer = 0f;
+        }
+
+    }
+
+
+    public Vector2 GenerateRandomNumer(float xAxis , float yAxis)
+    {
+        float x = UnityEngine.Random.Range(-xAxis, xAxis);
+        float y = UnityEngine.Random.Range(-yAxis, yAxis);
+        return new Vector2(x, y);
     }
 
 
     void RandomFood()
     {
-        if (food.Count > 0)
+        if (foodList.Count > 0)
         {
-            int random_food = UnityEngine.Random.Range(0, food.Count);
+            int random_food = UnityEngine.Random.Range(0, foodList.Count);
             Debug.Log(random_food);
-            float x = UnityEngine.Random.Range(-7, 7);
-            float y = UnityEngine.Random.Range(-4, 4);
-            Transform food_prefab = Instantiate(food[random_food]);
-            food_prefab.position = new Vector2(x, y);
+
+            Transform food_prefab = Instantiate(foodList[random_food]);
+            food_prefab.position = GenerateRandomNumer(7, 4);
         }
     }
 
-    void MassBuner()
+    void SpawnMassBuner()
     {
-        if (controller.snakeSegments.Count > 5)
+        if (scoreController.GetPlayerOneScore() > 5 || scoreController.GetPlayerTwoScore() > 5)
         {
             float x = UnityEngine.Random.Range(-7, 7);
             float y = UnityEngine.Random.Range(-4, 4);
             Transform massBunner = Instantiate(massBuner);
-            massBuner.position = new Vector2(x, y);
+            massBuner.position = GenerateRandomNumer(7, 4);
         }
 
     }
+
 
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Food
+  - SnakeBody
+  - Snake
+  - Snake2
   layers:
   - Default
   - TransparentFX
