@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -245.4646, y: -83.70001}
+  m_AnchoredPosition: {x: -196, y: -83.70001}
   m_SizeDelta: {x: 449.4084, y: 57.3024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9157540018951330090
@@ -287,12 +287,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   segmentPrefab: {fileID: 4784201809106549769, guid: 453819e878d84c745970ada219fd87ec, type: 3}
-  segmentSpacing: 0.5
+  segmentSpacing: 0.15
   snakeSegments: []
   restartScreen: {fileID: 0}
+  scoreController: {fileID: 0}
   playerType: 1
   score: {fileID: 6489402179868986096}
   player: 
+  _score: 0
 --- !u!50 &1434438850901295378
 Rigidbody2D:
   serializedVersion: 4

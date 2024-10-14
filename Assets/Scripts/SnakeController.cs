@@ -144,7 +144,7 @@ else if (playerType == PlayerType.PLAYERTWO)
 
 public void Grow()
 {
-    _score++;
+    _score = 1;
     Transform segment = Instantiate(segmentPrefab);
     segment.position = snakeSegments[snakeSegments.Count - 1].position;
     if(snakeSegments.Count >= 5)

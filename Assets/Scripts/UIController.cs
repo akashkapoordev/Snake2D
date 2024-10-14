@@ -20,15 +20,6 @@ public class UIController : MonoBehaviour
 
     private void Awake()
     {
-        //  if (instance == null)
-        // {
-        //     instance = this;
-        //     DontDestroyOnLoad(gameObject);
-        // }
-        // else
-        // {
-        //     Destroy(gameObject);
-        // }
 
         playButton.onClick.AddListener(PlayButton);
         multiplayerButton.onClick.AddListener(MultiplayerButton);
